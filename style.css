@@ -1,0 +1,202 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #9F70FD;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.class_container {
+    background-color: white;
+    position: relative;
+    margin: 90px 50px;
+    padding: 10px;
+    border: 3px solid antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.heading_class {
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #9F70FD;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.heading_description {
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: #6a696c;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.btn {
+    height: 35px;
+    width: 200px;
+    background-color: #9F70FD;
+    border: none;
+    border-radius: 3px;
+    color: azure;
+    font-size: 1rem;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #9F70FD;
+    color: #9F70FD;
+    box-shadow: 0 4px 6px #9F70FD;
+}
+
+.heading_btn {
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.pricecard_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+   
+}
+
+.price_card {
+    position: relative;
+    border: 2px solid #9F70FD;
+    height: 350px;
+    width: 250px;
+    width: calc(33.33% - 10px); 
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+.price_card:hover {
+    background-color: #d5c3f8;
+    cursor: pointer;
+    box-shadow: 0 4px 6px #b798f5;
+    border-color: #d5c3f8;
+}
+
+.price_card h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    color: #6a696c;
+    margin: 10px;
+}
+
+.price_card span {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 1000;
+    font-size: 2rem;
+}
+
+.price_section {
+    margin: 15px;
+    padding: 15px;
+}
+
+.price_card p {
+    margin: 5px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.price_card i {
+    margin-right: 5px;
+}
+
+.freecard_btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .btn {
+        width: 180px;
+        font-size: 0.85rem;
+    }
+    .class_container {
+        margin: 30px 20px;
+        padding: 10px;
+    }
+    .pricecard_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .price_card {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .btn {
+        width: 170px;
+        font-size: 0.9rem;
+    }
+    .class_container {
+        margin: 50px 30px;
+        padding: 10px;
+    }
+    .price_card {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .btn {
+        width: 190px;
+        font-size: 0.95rem;
+    }
+    .class_container {
+        margin: 70px 40px;
+        padding: 10px;
+    }
+    .price_card {
+        width: 70%;
+        margin: 15px auto;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .btn {
+        width: 195px;
+        font-size: 0.975rem;
+    }
+    .class_container {
+        margin: 80px 45px;
+        padding: 10px;
+    }
+    .price_card {
+        width: 65%;
+        margin: 20px auto;
+    }
+}
